@@ -1,0 +1,99 @@
+/*  */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ajuste general */
+body {
+    font-family: "Arvo", serif;
+    background-color: #ffde8b;
+}
+
+/* Estilos mobile */
+
+/* Ajuste de header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    padding-right: 25px; 
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header img {
+    width: 20%;
+}
+
+
+/* Ajustes del main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+}
+
+main h1 {
+    font-size: 10vw;
+    text-align: center;
+}
+
+.img-index {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+#slogan {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0 1rem;
+}
+
+
+/* Ajustes del footer */
+
+footer.redes {
+    margin: 15px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    text-align: center;
+}
+
+footer.redes a {
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icono {
+    width: 24px;
+    height: auto;
+}
+
+
+
+
+
