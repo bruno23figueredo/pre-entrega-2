@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaa Informacion</title>
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuente Títulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Delius&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oregano:ital@0;1&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="imagenes/avva-logo.jpg" alt="Logo de Avaa Artesanias en Yeso" class="logo">
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="combos-y-ofertas.html">Combos y Ofertas</a>
+                </li>
+                <li>
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="conocenos.html">Conócenos</a>
+                </li>
+                <li>
+                    <a href="info.html">Info</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Avaa - Artesanías en Yeso</h1>
+        <div>
+            <h2>Contáctanos</h2>
+            <form action="/submit" method="post">
+                <!--FORMATO LISTA DESORDENADA PARA ESTILIZACIÓN -->
+                <ul>
+                    <li>
+                        <!--Formulario para nombre -->
+                        <label for="">Nombre</label>
+                        <input type="text" name="" id="nombre">
+                    </li>
+                    <li>
+                        <!--Formulario para género -->
+                        <label for="genero">Género</label>
+                        <input type="radio" name="" id="">
+                        <label for="">Hombre</label>
+                        <input type="radio" name="" id="">
+                        <label for="">Mujer</label>
+                        <input type="radio" name="" id="">
+                        <label for="">No Binarix</label>
+                    </li>
+                    <li>
+                        <!--Formulario para elegir zona de Buenos Aires -->
+                        <label for="cuidad">Cuidad</label>
+                        <select name="" id="">
+                            <option value="">CABA</option>
+                            <option value="">Buenos Aires</option>
+                            <option value="">Buenos Aires Interior</option>
+                        </select>
+                    </li>
+                    <li>
+                        <!--área para escribir consulta -->
+                        <label for="consulta">Consulta</label>
+                        <textarea name="consulta" id="consulta"></textarea>
+                    </li>
+                </ul>
+                <!--Se envia a mail del emprendimiento -->
+                <input type="submit" value="Enviar">
+            </form>
+            <span class="contacto">
+                <img src="imagenes/logo-wsp.png" alt="logo whatsapp" class="simbolos">
+                <p> +54 9 11 23456789</p>
+                <img src="imagenes/simbolo-arroba.png" alt="simbolo arroba" class="simbolos">
+                <p>avaayeso-contacto@gmail.com</p>
+            </span>
+        </div>
+            <span>
+                <h2>Medios de Pago</h2>
+                <ul>
+                    <li>Transferencia</li>
+                    <li>Efectivo</li>
+                </ul>
+            </span>
+    </main>
+    <footer class="redes">
+        <a href="https://www.instagram.com/avaayeso/profilecard/?igsh=YnkydHM3d3M0aDVp"><img src="imagenes/logo-instagram.png" alt="logo instagram">
+        </a>
+        <a href="https://www.instagram.com/avaayeso/profilecard/?igsh=YnkydHM3d3M0aDVp">@avaayeso</a>
+        <a href="https://www.facebook.com/share/1A8XH65SDC/"><img src="imagenes/logo-facebook.png" alt="logo facebook">
+        </a>
+        <a href="https://www.facebook.com/share/1A8XH65SDC/">Avaa Yeso</a>
+    </footer>
+</body>
+</html>
