@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaa Informacion</title>
+
+    <!-- Enlace Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
     <!-- Enlace al CSS -->
     <link rel="stylesheet" href="../css/style.css">
+
     <!-- Fuente Títulos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,24 +19,33 @@
 <body>
     <header>
         <img src="../imagenes/avaa-logo.png" alt="Logo de Avaa Artesanias en Yeso" class="logo">
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="../index.html">Inicio</a>
+        <!-- Menu hamburguesa con bootstrap + mi css -->
+        <nav class="navbar navbar-expand-md bg-body-tertiary mi-menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                 </li>
-                <li>
-                    <a href="combos-y-ofertas.html">Combos y Ofertas</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="combos-y-ofertas.html">Combos y Ofertas</a>
                 </li>
-                <li>
-                    <a href="productos.html">Productos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
                 </li>
-                <li>
-                    <a href="conocenos.html">Conócenos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="conocenos.html">Conocenos</a>
                 </li>
-                <li>
-                    <a href="info.html">Info</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">Info</a>
                 </li>
-            </ul>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -45,16 +59,6 @@
                         <!--Formulario para nombre -->
                         <label for="">Nombre</label>
                         <input type="text" name="" id="nombre">
-                    </li>
-                    <li>
-                        <!--Formulario para género -->
-                        <label for="genero">Género</label>
-                        <input type="radio" name="" id="">
-                        <label for="">Hombre</label>
-                        <input type="radio" name="" id="">
-                        <label for="">Mujer</label>
-                        <input type="radio" name="" id="">
-                        <label for="">No Binarix</label>
                     </li>
                     <li>
                         <!--Formulario para elegir zona de Buenos Aires -->
@@ -74,20 +78,20 @@
                 <!--Se envia a mail del emprendimiento -->
                 <input type="submit" value="Enviar">
             </form>
-            <span class="contacto">
-                <img src="../imagenes/logo-wsp.png" alt="logo whatsapp" class="simbolos">
+            <div class="contacto">
+                <img src="../imagenes/logo-wsp.png" alt="logo whatsapp" class="icono">
                 <p> +54 9 11 23456789</p>
-                <img src="../imagenes/simbolo-arroba.png" alt="simbolo arroba" class="simbolos">
+                <img src="../imagenes/simbolo-arroba.png" alt="simbolo arroba" class="icono">
                 <p>avaayeso-contacto@gmail.com</p>
-            </span>
+            </div>
         </div>
-            <span>
+            <div>
                 <h2>Medios de Pago</h2>
-                <ul>
+                <ul class="pago">
                     <li>Transferencia</li>
                     <li>Efectivo</li>
                 </ul>
-            </span>
+            </div>
     </main>
     <footer class="redes">
         <a href="https://www.instagram.com/avaayeso/profilecard/?igsh=YnkydHM3d3M0aDVp"><img src="../imagenes/logo-instagram.png" alt="logo instagram" class="icono">
@@ -97,5 +101,8 @@
         </a>
         <a href="https://www.facebook.com/share/1A8XH65SDC/">Avaa Yeso</a>
     </footer>
+
+    <!-- Enlace java de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
